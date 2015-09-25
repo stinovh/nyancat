@@ -1,0 +1,108 @@
+body {
+  background-image: url('images/nyancat-bg.jpg');
+  color: white;
+  font-family: visitor2;
+}
+
+html {
+  cursor: url('images/nyanicon.png'), auto;
+}
+
+@font-face {
+  font-family: visitor2;
+  src: url('fonts/visitor2.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 10em;
+  color: #FF99FF;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.white {
+  background-color: rgba(0,0,0,0.4);
+  padding: 35px;
+}
+
+h3 {
+  font-size: 5em;
+  color: #FFEF01;
+  line-height: 0.6em;
+}
+
+p {
+  font-size: 1.5em;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h4{
+  font-size: 2.5em;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.form-pad{
+  margin-top: 50px;
+  font-size: 7em;
+}
+
+
+
+.slideRight{
+  animation-name: slideRight;
+  -webkit-animation-name: slideRight;
+
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+
+  visibility: visible !important;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-150%);
+  }
+  50%{
+    transform: translateX(8%);
+  }
+  65%{
+    transform: translateX(-4%);
+  }
+  80%{
+    transform: translateX(4%);
+  }
+  95%{
+    transform: translateX(-2%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes slideRight {
+  0% {
+    -webkit-transform: translateX(-150%);
+  }
+  50%{
+    -webkit-transform: translateX(8%);
+  }
+  65%{
+    -webkit-transform: translateX(-4%);
+  }
+  80%{
+    -webkit-transform: translateX(4%);
+  }
+  95%{
+    -webkit-transform: translateX(-2%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+  }
+}
